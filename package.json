@@ -40,6 +40,13 @@
     "url": "https://github.com/windbreaker-io/windbreaker/issues"
   },
   "homepage": "https://github.com/windbreaker-io/windbreaker#readme",
+  "config": {
+    "branchNameCommitModifier": {
+      "preChar": "[",
+      "postChar": "]",
+      "projectName": "WB"
+    }
+  },
   "devDependencies": {
     "ava": "^0.19.1",
     "eslint": "^4.0.0",
