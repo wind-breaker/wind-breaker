@@ -14,7 +14,7 @@ exports.initialize = async function () {
   const eventsConsumer = new ManagedConsumer({
     amqUrl,
     logger,
-    restartConsumer: true,
+    restart: true,
     reconnectTimeout: CONSUMER_RECONNECT_TIMEOUT,
     consumerOptions: {
       queueName: EVENTS_QUEUE_NAME,
@@ -29,7 +29,7 @@ exports.initialize = async function () {
   const workConsumer = new ManagedConsumer({
     amqUrl,
     logger,
-    restartConsumer: true,
+    restart: true,
     reconnectTimeout: CONSUMER_RECONNECT_TIMEOUT,
     consumerOptions: {
       queueName: WORK_QUEUE_NAME,
