@@ -42,14 +42,14 @@ exports.initialize = async function () {
   })
 
   // In the future, we may want fine control over the consumer instances
-  // eventsManager.on('consumer-restarted', (consumer) => {
+  // eventsConsumer.on('consumer-restarted', (simpleConsumer) => {
   //  // handle new consumer
   // })
   //
   // we may also handle situations where we fail to create consumers
   // (possibly kill process and allow server to reset)
-  // eventsManager.on('consumer-restart-failed', (consumer) => {
-  //  // handle new consumer
+  // eventsConsumer.on('consumer-restart-failed', (err) => {
+  //  // handle restart failure
   // })
 
   // Create events queue consumer
