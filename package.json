@@ -9,7 +9,6 @@
     "docker:stop": "docker-compose down",
     "pretest": "npm run lint",
     "test": "npm run docker:start && sleep 10 && nyc ava test/unit test/integration; npm run docker:stop",
-    "test:ci": "nyc ava test/unit test/integration",
     "test:unit": "nyc ava test/unit",
     "test:integration": "npm run docker:start && sleep 10 && nyc ava test/integration; npm run docker:stop",
     "start": "browser-refresh src/server.js",

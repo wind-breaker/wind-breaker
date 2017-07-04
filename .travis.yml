@@ -4,10 +4,6 @@ node_js:
 
 services:
   - docker
-  - rabbitmq
-  - postgresql
-
-script: npm run test:ci
 
 notifications:
   slack:
