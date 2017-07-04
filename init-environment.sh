@@ -5,7 +5,7 @@ alias echoerr=">&2 echo"
 
 # set up trap so that script can be exited from within functions
 trap "exit 1" TERM
-export main_pid=$$
+main_pid=$$
 
 lookup_service_port() {
     service=$1
